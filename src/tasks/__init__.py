@@ -5,50 +5,34 @@ import json
 import lm_eval.base
 
 from . import flare
-
+# Clear GPU memory
+import torch
+torch.cuda.empty_cache()
 TASK_REGISTRY = {
-     "flare_zh_fe": flare.ZHFinFE,
-    "flare_zh_nl": flare.ZHFinNL,
-    "flare_zh_nl2": flare.ZHFinNL2,
-    "flare_zh_re": flare.ZHFinRE,
-    "flare_zh_nsp": flare.ZHFinNSP,
-    "flare_zh_stocka": flare.ZHAstock,
-    "flare_zh_corpus": flare.ZHBQcourse,
-    "flare_zh_fineval": flare.ZHFinEval,
-    "flare_zh_afqmc": flare.ZHAFQMC,
-    "flare_zh_stockb": flare.ZHstock11,
-    "flare_zh_qa": flare.ZHFinQA,
-    "flare_zh_na": flare.ZHFinNA,
-    "flare_zh_21ccks": flare.ZH21CCKS,
-    "flare_zh_19ccks": flare.ZH19CCKS,
-    "flare_zh_20ccks": flare.ZH20CCKS,
-    "flare_zh_22ccks": flare.ZH22CCKS,
-    "flare_zh_ner": flare.ZHNER,
-    "flare_zh_fpb": flare.ZHFPB,
-    "flare_zh_fiqasa": flare.ZHFIQASA,
-    "flare_zh_headlines": flare.ZHHeadlines,
-    "flare_zh_bigdata": flare.ZHBigData,
-    "flare_zh_acl": flare.ZHACL,
-    "flare_zh_cikm": flare.ZHCIKM,
-    "flare_zh_finqa": flare.ZHFinQAE,
-    "flare_zh_convfinqa": flare.ZHConvFinQA,
-    "flare_en_fpb": flare.FPB,
-    "flare_en_fiqasa": flare.FIQASA,
-    "flare_en_ner": flare.NER,
-    "flare_en_finqa": flare.FinQA,
-    "flare_en_convfinqa": flare.ConvFinQA,
-    "flare_en_headlines": flare.Headlines,
-    "flare_en_finer_ord": flare.FinerOrd,
-    "flare_en_fomc": flare.FOMC,
-    "flare_en_german": flare.German,
-    "flare_en_australian": flare.Australian,
-    "flare_en_ectsum": flare.ECTSUM,
-    "flare_en_edtsum": flare.EDTSUM,
-    "flare_sm_bigdata": flare.StockMovementBigData,
-    "flare_sm_acl": flare.StockMovementACL,
-    "flare_sm_cikm": flare.StockMovementCIKM,
+    "flare_thEx": flare.ThExTask,
+    "flare_idfinsent": flare.IDfinsent,
+    "flare_IdFinReviewsSent": flare.IDFinReviewsSent,
+    "flare_CCFraud": flare.CCFraudTask,
+    "flare_craccf": flare.craccfTask,
+    "flare_fbp": flare.FpbTask,
+    "flare_Australian": flare.AustralianTask,
+    "flare_sm_cikmID": flare.StockMovementCIKMID,
+    "flare_vi_bigdata": flare.StockMovementBigDataVI,
+    "flare_sm_aclPH": flare.StockMovementACLPH,
+    "flare_sm_aclMY": flare.StockMovementACLMY,
+    "flare_stockATh": flare.StockMovementStockA,
+    "flare_fiqasa": flare.FIQASA,
+    "flare_cra_lendingclub": flare.lendingclub,
+    "flare_IDFinURLSum": flare.IDFinURLSumTask,
+    "flare_VieRen": flare.VieComputerPartTask,
+    "flare_MayRen": flare.MayComputerPartTask,
+    "flare_ThaRen": flare.THComputerPartTask,
+    "flare_IndRen": flare.IndComputerPartTask,
+    "flare_FilRen": flare.FilComputerPartTask,
+
     **flare.SM_TASKS,
 }
+
 
 ALL_TASKS = sorted(list(TASK_REGISTRY))
 
