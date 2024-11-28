@@ -1,10 +1,11 @@
 
-# No Language is an Island: Unifying Chinese and English in Financial Large Language Models, Instruction Data, and Benchmarks
+#SeaBen: A Multi-language Benchmark for Large
+Language Models in Southeast Asian Finance
 =======
 
 **Languages**
 
-[Chinese](https://github.com/YY0649/ICE-PIXIU/blob/master/README.zh.md)
+[Southeast Asian Languages](https://github.com/qqgzi/CCL2025_finEval/edit/master/README.md)
 
 
 **Disclaimer**
@@ -16,15 +17,16 @@ This repository and its contents are for **academic and educational purposes onl
 ---
 
 ## News
-**📢 Update (Date: 2024/03/12)**
+**📢 Update (Date: 2024/28/11)**
 
-🐹 We are excited to share our paper, "No Language is an Island: Unifying Chinese and English in Financial Large Language Models, Instruction Data, and Benchmarks".
+🐹 We are excited to share our paper, "SeaBen: A Multi-language Benchmark for Large
+Language Models in Southeast Asian Finance".
 
 ---
 
 # Overview
 
-**ICE-PIXIU** is our comprehensive framework, featuring the first cross-lingual bilingual financial instruction dataset ICE-FIND, large language model ICE-INTENT, and evaluation benchmark ICE-FLARE. ICE-PIXIU combines various Chinese classification, extraction, reasoning, and prediction financial NLP tasks, enhancing training and performance to address the shortcomings in Chinese financial NLP. It simultaneously integrates a series of translated and original English datasets, enriching the breadth and depth of bilingual financial modeling. It offers unrestricted access to various model variants, a compilation of diverse cross-lingual and multi-modal instruction data, and an evaluation benchmark with expert annotations, encompassing 10 NLP tasks and 20 bilingual specific tasks. Our comprehensive evaluation emphasizes the advantages of combining these bilingual datasets, particularly in translation tasks and leveraging original English data, thereby enhancing language flexibility and analytical acumen in financial contexts.
+**SeaBen** is our comprehensive framework, featuring the first cross-lingual bilingual financial instruction dataset ICE-FIND, large language model ICE-INTENT, and evaluation benchmark ICE-FLARE. ICE-PIXIU combines various Chinese classification, extraction, reasoning, and prediction financial NLP tasks, enhancing training and performance to address the shortcomings in Chinese financial NLP. It simultaneously integrates a series of translated and original English datasets, enriching the breadth and depth of bilingual financial modeling. It offers unrestricted access to various model variants, a compilation of diverse cross-lingual and multi-modal instruction data, and an evaluation benchmark with expert annotations, encompassing 10 NLP tasks and 20 bilingual specific tasks. Our comprehensive evaluation emphasizes the advantages of combining these bilingual datasets, particularly in translation tasks and leveraging original English data, thereby enhancing language flexibility and analytical acumen in financial contexts.
 
 ### Key Features
 
